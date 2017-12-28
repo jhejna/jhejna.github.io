@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta name="author" contents="Joey Hejna">
+	<meta name="description" contents="A portfolio website">
+
+	<title>Joey Hejna</title>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	
+	<!-- Custom Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+	<!-- Custom Style Sheet -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Temporary navbar container fix -->
+	<style>
+	.navbar-toggler {
+		z-index: 1;
+	} 
+	@media (max-width: 576px) {
+		nav > .container {
+			width: 100%;
+		}
+	}
+	</style>
+
+	<link rel="icon" href="img/jhlogo.png">
+
+</head>
+
+<body class="index" id="page-top">
+	
+	<!-- Navigation -->
+	<nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+			Menu <i class="fa fa-bars"></i>
+		</button>
+		<div class="container">
+			<a class="navbar-brand" href="#page-top">Joey Hejna</a>
+			<div class="collapse navbar-collapse" id="navbarExample">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#portfolio">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Header -->
+	<header class="masthead">
+		<div class="container">
+			<img class="img-fluid" src="img/profile.jpg" alt="">
+			<div class="intro-text">
+				<span class="name">Joey Hejna</span>
+				<hr class="star-light">
+				<span class="skills">UC Berkeley - Computer Science - Engineering</span>
+			</div>
+		</div>
+	</header>
+
+	<!-- Portfolio Grid Section -->
+	<section id="portfolio">
+		<div class="container">
+			<h2 class="text-center">Portfolio</h2>
+			<hr class="star-primary">
+			<div class="row">
+				<!-- Item 1 -->
+				<div class="col-sm-4 portfolio-item">
+					<div class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								Streamline Mobile App
+							</div>
+						</div>
+						<img class="img-fluid" src="img/streamline/landing_image.png" alt="">
+					</div>
+				</div>
+				<!-- Item 2 -->
+				<div class="col-sm-4 portfolio-item">
+					<div class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								Language Processing for SEC Filings
+							</div>
+						</div>
+						<img class="img-fluid" src="img/secnlp/SEClanding.png" alt="">
+					</div>
+				</div>
+				<!-- Item 3 -->
+				<div class="col-sm-4 portfolio-item">
+					<div class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								FRC Robotics 2017
+							</div>
+						</div>
+						<img class="img-fluid" src="img/frc2017/2017render.jpg" alt="">
+					</div>
+				</div>
+				<!-- Item 4 -->
+				<div class="col-sm-4 portfolio-item">
+					<div class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								FRC Robotics 2016
+							</div>
+						</div>
+						<img class="img-fluid" src="img/frc2016/2016bot.jpg" alt="">
+					</div>
+				</div>
+				<!-- Item 5 -->
+				<div class="col-sm-4 portfolio-item">
+					<div class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								Web Development
+							</div>
+						</div>
+						<img class="img-fluid" src="img/web/webdev.jpg" alt="">
+					</div>
+				</div>
+				<!-- Item 6 -->
+				<div class="col-sm-4 portfolio-item">
+					<div class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								Sentiment Analysis
+							</div>
+						</div>
+						<img class="img-fluid" src="img/speechsentiment/debateall.png" alt="">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section class="secondary" id="about">
+		<div class="container">
+			<h2 class="text-center">About</h2>
+			<hr class="star-light">
+			<div class="row">
+				<div class="col-lg-5 offset-lg-1">
+					<p class="about-text">I'm currently pursing an undergraduate degree Electrical Engineering and Computer Science at UC Berkeley. Ever since I was a kid I've been obsessed with building and creating from legos to the computers of the present. I'm extremely excited about engineering and computer science because of the way I believe it can shape the future. Right now, I think big data and information technology is huge and I believe there's nothing more exciting than using a computer to discover trends humans would be incapable of perceiving alone. I'm not completely sure of exactly what I want to work on in the future, but am currently exploring. As such I've spent my time playing with all the tech I can get my hands on, from robots to NLP libraries.</p>
+				</div>
+				<div class="col-lg-5">
+					<p class="about-text">Though I'm heavily invested in my technical skills, I also spend a lot of time in non-technical activities. I love music. In my free time I often browse youtube for new songs or just listen to songs I love. I've played guitar (electric and acoustic) for about eight years. I used to run a DJ business. I was in choir in high school and continue to participate in vocal performance through an A capella group at UC berkeley. Aside from music I enjoy playing sports recreationally, specifically ultimate frisbee. I worked as a US Sailing certified sailing instructor for two summers and love sailing or racing in my free time.</p>
+				</div>
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<a href="files/HejnaJoeyResume.pdf" class="btn btn-lg btn-outline">
+						Download Resume
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--Contact Section -->
+	<section id="contact">
+		<div class="container">
+			<h2 class="text-center">Contact me</h2>
+			<hr class="star-primary">
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<h3>Location</h4>
+						<p class="large">Berkeley, CA<br>Los Altos, CA</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<h3>Around the Web</h4>
+							<p class="large">
+								<a href="https://www.github.com/jhejna">Github</a>
+								<br>
+								<a href="https://www.linkedin.com/in/joeyhejna/">LinkedIn</a>
+							</p>
+						</div>
+						<div class="col-md-4 text-center">
+							<h3>Direct</h4>
+								<p class="large">
+									jhejna@berkeley.edu
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Footer -->
+				<footer class="text-center">
+					<div class="footer-below">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-12">
+									Copyright &copy; Joey Hejna 2017
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+
+				<!-- Portfolio Modals HTML-->
+
+				<!-- Streamline Modal -->
+				<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+
+							<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+									<div class="rl">
+									</div>
+								</div>
+							</div>
+
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-8 offset-lg-2">
+										<div clsas="modal-body">
+											<h2>Streamline App</h2>
+											<hr class="star-primary">
+											<img class="img-fluid half-img" src="img/streamline/screenshot1.png" alt="">
+											<img class="img-fluid half-img" src="img/streamline/screenshot2.png" alt="">
+											<ul class="list-inline item-details">
+												<li>Date: 
+													<strong>Fall 2017</strong>
+												</li>
+												<li>Technologies: 
+													<strong>Android Studio, Java, Firebase, Spotify SDK</strong>
+												</li>
+												<li>Role: 
+													<strong>Android Project Manager</strong>
+												</li>
+											</ul>
+											<a href="https://play.google.com/store/apps/details?id=org.mobiledevsberkeley.streamline&hl=en" class="btn btn-md btn-secondary">Download App</a>
+											<p>Streamline is a cross-platform mobile application developed by me and other members of the Mobile Developers of Berkeley Organization. The application allows users to share music by searching the entire spotify library and then posting one song to a feed each day. As project manager, I lead android development for our team of three coders. During the course of the project I worked with Token authentication, Firebase, and Android Studio. The app is availible on the playstore at the above link. As a part of the team I designed the app screens, implemented authenticaiton and streaming features with the Spotify API, and read / wrote to the Firebase database.</p>
+											<button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- NLP Modal -->
+				<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+
+							<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+									<div class="rl">
+									</div>
+								</div>
+							</div>
+
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-8 offset-lg-2">
+										<div clsas="modal-body">
+											<h2>Language Processing for SEC Filings</h2>
+											<hr class="star-primary">
+											<img class="img-fluid img-centered" src="img/secnlp/SECVisualizer2.png" alt="">
+											<ul class="list-inline item-details">
+												<li>Date: 
+													<strong>Summer 2016</strong>
+												</li>
+												<li>Technologies: 
+													<strong>Python Natural Language Toolkit, SQL, Javascript, Google Charts API</strong>
+												</li>
+												<li>Role: <strong>Research Assistant at Stanford Department of Political Science</strong></li>
+											</ul>
+											<a href="files/nlp_paper.pdf" class="btn btn-md btn-secondary">Download Report</a>
+											<p>Over the summer I worked as research assistant at Stanford's Department of Political science under the supervision of assistant professor Andrew Hall. I worked on a research problem involving 1.3 Terabytes of 10-K and 10-Q filings that were scraped from the U.S. Securities and Exchange Commission. The basic approach was to format, parse, and then split the text files into n-grams, units of varying numbers of words, in order to make statistical correlations against time, industry, or firm. I completed all natural language processing in the natural language toolkit python environment. The end goal of the project is to create a publicly available web visualizer for all of the language data, similar to the Google N-Grams visualizer for all texts within Google Books.I was as the primary programmer on the research team of approximately eight graduate and undergraduate students.  I developed the algorithms to organize and interpret the raw text of the scraped corporate filings. The first step was to use python scripts in order to preprocesses and clean the files, before accurately parsing information from them. From their I completed two different objectives. I designed a robust program flow designed to extract common bigrams from all of a single firm's filings, essentially resulting in a sparse frequency matrix of all firms. My second task was creating the web interface for performing searches and visualizing results for the word tokens in the filings. Users can plot word frequencies over time and against industry segments. This involves a full-stack with an multi-table indexed SQL backend in conjunction with PHP, HTML/CSS for the site, and JS and Google Charts API for visualization. I wrote all of the code, defined the SQL schema, and spent hours optimizing the runtime. </p>
+											<img class="img-fluid half-img" src="img/secnlp/SECVisualizer1.png" alt="">
+											<img class="img-fluid half-img" src="img/secnlp/SECSQL1.png" alt="">
+
+											<button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- FRC 2017 Modal -->
+				<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+
+							<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+									<div class="rl">
+									</div>
+								</div>
+							</div>
+
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-8 offset-lg-2">
+										<div clsas="modal-body">
+											<h2>FRC Robotics 2017</h2>
+											<hr class="star-primary">
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/75RSk0-8hO0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+											<ul class="list-inline item-details">
+												<li>Date: 
+													<strong>Spring 2017</strong>
+												</li>
+												<li>Technologies: 
+													<strong>Solidworks, Mill & Lathe Fabrication, C++</strong>
+												</li>
+												<li>Role: 
+													<strong>Team Captain, Manager</strong>
+												</li>
+											</ul>
+											<p>I served as captain during the 2017 season for my high school's robotics team. Under my direciton, our team earned first place at the Venture Regional in California and qualified and competed at the FRC naitonal championship for the first time in our school's two-decade history. As captain I managed the build process for the robot from ideation to designed and refinement. Using 3D solidworks I designed over 200 components, completely designing the robot's drive and game piece control systems. I manufactured parts in-house utilizing a milling machine, Lathe, and 3D printer and additionally interfaced with outside professional manufacturers. The robot moves in any direction at 20 ft/s, collects and places gears on pegs, and is able to hang itself from a rope with a knot.</p>
+											<img class="img-fluid half-img" src="img/frc2017/114Swerve.png" alt="">
+											<img class="img-fluid half-img" src="img/frc2017/114Swerve-section.png" alt="">
+											<p>One of the robots most complicated systems is its "swerve" drivetrain. Using a complex system of gears, motors, and continuous potentiometers, the robot is able to rotate each one of its wheels independently while keeping them under power, allowing it to move in any direction without rotating the robot itself. Renders of the CAD I made for it are pictured above.</p>
+											<img class="img-fluid half-img" src="img/frc2017/2017render.jpg" alt="">
+											<img class="img-fluid half-img" src="img/frc2017/2017real.jpg" alt="">
+											<button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- FRC 2016 Modal -->
+				<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+
+							<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+									<div class="rl">
+									</div>
+								</div>
+							</div>
+
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-8 offset-lg-2">
+										<div clsas="modal-body">
+											<h2>FRC Robotics 2016</h2>
+											<hr class="star-primary">
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/6apPdPLXY70" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+											<ul class="list-inline item-details">
+												<li>Date: 
+													<strong>Spring 2016</strong>
+												</li>
+												<li>Technologies: 
+													<strong>Solidworks, Mill & Lathe Fabrication, C++</strong>
+												</li>
+												<li>Role: 
+													<strong>Team President, Manager</strong>
+												</li>
+											</ul>
+											<p>During the 2016 season, I worked on a complicated robot designed to traverse obstacles and shoot a foam ball into a goal about 11ft in the air. Through rigourous prototyping, I designed a drivetrain and frame with pnuematic wheels that could not get stuck on the game ostacles. In addition, I designed a pnuematically actuated flipper system in order to allow the robot to traverse the obstacles that required active action by the robot. Finally, I worked on implementing the aiming system for the fly-wheel shooter. As team President I managed a team of over thrity students throughout the build process.</p>
+											<img class="img-fluid img-centered" src="img/frc2016/2016bot.jpg" alt="">
+											<button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Web Dev Modal -->
+				<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+
+							<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+									<div class="rl">
+									</div>
+								</div>
+							</div>
+
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-8 offset-lg-2">
+										<div clsas="modal-body">
+											<h2>Web Development</h2>
+											<hr class="star-primary">
+											<img class="img-fluid half-img" src="img/web/personalwebsite.png" alt="">
+											<img class="img-fluid half-img" src="img/web/beyondfistula.png" alt="">
+											<ul class="list-inline item-details">
+												<li>Date: 
+													<strong>2015-Present</strong>
+												</li>
+												<li>Technologies: 
+													<strong>HTML, CSS, JavaScript, jQuery, PHP, Bootstrap</strong>
+												</li>
+												<li>Role: 
+													<strong>Android Project Manager</strong>
+												</li>
+											</ul>
+											<p>In 2015 I created a new website for the non-profit Beyond Fistula (now a legacy site), a charity that assists women in Africa after invasive fistula removal surgery. As web manager I updated webpages, styles, and wrote content for the site which is used in the newer version. I later took CS193C at Stanford University, Clientside Internet technologies, where I learned JavaScript. In the class I completed various projects, one of which was to make a rudimentary Google Maps like clone in JavaScript. Afterwards, I began to use web development skills in several projects and eventually created the portfolio website you are on now. </p>
+											<button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Sentiment Analysis Modal -->
+				<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+
+							<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+									<div class="rl">
+									</div>
+								</div>
+							</div>
+
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-8 offset-lg-2">
+										<div clsas="modal-body">
+											<h2>Language Processing For Speech Sentiment</h2>
+											<hr class="star-primary">
+											<img class="img-fluid img-centered" src="img/speechsentiment/state_union.png" alt="">
+											<ul class="list-inline item-details">
+												<li>Date: 
+													<strong>Spring 2017</strong>
+												</li>
+												<li>Technologies: 
+													<strong>Python, Natural Language Toolkit</strong>
+												</li>
+											</ul>
+											<p>For my senior project I decided to research the changing negativity of political speech overtime using natural language processing. Utilizing the NLTK python library, I wrote code to measure the negativity of text phrases using the VADER speech classification algorithm. From there, I split speeches up into their individual sentences and then was able to tokenize each sentence and assign it a negativity score before averaging all sentences to reach a file score. Eventually, I was able to plot the relationship between time and the negativity of speech using the presidential Innaugural address and State of the Union address. I found statistically significant results that indidcated a negative trend of speech sentiment.</p>
+											<img class="img-fluid img-centered" src="img/speechsentiment/inaugural.png" alt="">
+											<p>Later, I analyzed the political debates specifically. I wrote a python script to parse through the text of the debates between Clinton and Trump and divide the text by speaker. I later compared the sentiment scores of each speaker to determine if one candidate was more negative than the other. My results indicate that Trump was 312% more negative than Clinton.</p>
+											<img class="img-fluid img-centered" src="img/speechsentiment/debateall.png" alt="">
+
+											<button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!--jQuery, Bootstrap Scripts -->
+				<script
+				src="https://code.jquery.com/jquery-3.2.1.js"
+				integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+				crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+				<!-- Custom Scripts -->
+				<script src="js/scripts.js"></script>
+
+
+			</body>
+			</html>	
