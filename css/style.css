@@ -271,6 +271,10 @@ header.masthead {
 .half-img {
   max-width: 45%; }
 
+.video {
+  width: 90%;
+  height: 350px; }
+
 .btn-outline {
   font-size: 20px;
   margin-top: 15px;
