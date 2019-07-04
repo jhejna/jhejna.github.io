@@ -51,7 +51,7 @@
       
         
         
-        <meta name="theme-color" content="#546e7a">
+        <meta name="theme-color" content="#3f51b5">
       
     
     
@@ -75,7 +75,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="light-blue">
   
     <svg class="md-svg">
       <defs>
@@ -94,7 +94,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="http://joeyhejna.com/notes" title="Notes" class="md-header-nav__button md-logo">
           
-            <i class="md-icon">notes</i>
+            <i class="md-icon">code</i>
           
         </a>
       </div>
@@ -153,6 +153,45 @@
         
       
       
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="/notes/." title="Home" class="md-tabs__link md-tabs__link--active">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="/notes/programming/python/about/" title="Programming" class="md-tabs__link">
+          Programming
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
@@ -164,7 +203,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href="http://joeyhejna.com/notes" title="Notes" class="md-nav__button md-logo">
       
-        <i class="md-icon">notes</i>
+        <i class="md-icon">code</i>
       
     </a>
     Notes
@@ -178,9 +217,69 @@
 
 
   <li class="md-nav__item">
-    <a href="/notes/." title="Welcome to My Notes" class="md-nav__link">
-      Welcome to My Notes
+    <a href="/notes/." title="Home" class="md-nav__link">
+      Home
     </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Programming
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Programming
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="/notes/programming/python/about/" title="About Python" class="md-nav__link">
+      About Python
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
