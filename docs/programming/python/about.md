@@ -1,2 +1,0 @@
-# About Python
-Python is an expansive language with tons of features that even veterans of the language can sometimes miss. This set of notes on python follow my investigations into the language and it's hidden features. These notes will not teach the python language, rather introduce some of it's advanced concepts that are not usually taught in intro courses.
