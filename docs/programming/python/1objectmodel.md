@@ -155,6 +155,7 @@ In order to enable consistent usage across all of the different objects in Pytho
 | `__repr__`     | repr(obj)                 | Returns a representation of the object used in the python shell.                                                         |
 | `__doc__`      | `help(obj)                | Gives documentation for the given type.                                                                                  |
 | `__hash__`     | `hash(obj)`               | Custom hash function for the object.                                                                                     |
+| `__get__` | N/A | Invoked every time an object is accessed. Used by function objects to make them callable. Similar definition for `__set__`|
 | `__eq__`       | `==`                      | Provides comparison binary operator. Other comaprison operators are `__lt__`, `__le__`, `__ne__`, `__ge__`, `__gt__`     |
 | `__add__`      | `add(a, b), +`            | Overrides math functionality. Others are `__sub__`, `__mul__`, `__abs__`, `__floordiv__`, `__truediv__`, `__pow__`, etc. |
 | `__getitem__`  | `object[ind]`             | Returns value of an object at a certain index                                                                            |
@@ -165,7 +166,7 @@ In order to enable consistent usage across all of the different objects in Pytho
 
 You can find more operator attributes at this link: https://docs.python.org/3/library/operator.html
 
-## Sources and Furtehr Reading
+## Sources and Further Reading
 https://docs.python.org/3.7/reference/datamodel.html
 https://docs.python.org/3/library/functions.html
 https://docs.python.org/3/library/constants.html
