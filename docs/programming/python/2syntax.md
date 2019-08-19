@@ -73,7 +73,7 @@ Double underscores on either side of a variable name, like `__variable__` refer 
 ## Ternary Operator
 
 Most people don't know about it, but python actually has a ternary operator. It is of the following form:
-``
+```
 true_result if condition else false_result
 ```
 
@@ -88,6 +88,18 @@ This works because `True` casts to the integer value 1 while `False` casts to th
 
 pdb is amazing. Not many people use it. It basically allows you to insert yourself in the middle of python's repl loop and step through any part of execution and manipulate variables at will. I've found it to be super useful. You can use it at any point by just importing `pdb`, then running `pdb.set_trace()`. A lot of Python programmers debug with print statements, and I find pdb to be much faster sometimes. Using pdb is straight forward and you can find it's documentation  [here](https://docs.python.org/3/library/pdb.html).
 
-## Unpacking Arguments
 
-`zip(*sorted(zip(list1, list2)))`
+
+## `for` and `else`
+One relatively unknown part of basic python control flow is the `for` and `else` combination. You can include an `else` clause at the end of for loops in python that will execute if no `break` is called. When searching through iteratbles, this can act as an ending "catch-all" if no matching item is found. THe official Python documentation has this example that finds all the prime numbers between 2 and 9 inclusive.
+```
+for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print( n, 'equals', x, '*', n/x)
+            break
+    else:
+        # loop fell through without finding a factor
+        print(n, 'is a prime number')
+```
+If a number `n` doesn't have any factors, we will never hit the `break` and thus the `else` clause will be invoked.
