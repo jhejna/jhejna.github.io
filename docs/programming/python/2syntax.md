@@ -103,3 +103,6 @@ for n in range(2, 10):
         print(n, 'is a prime number')
 ```
 If a number `n` doesn't have any factors, we will never hit the `break` and thus the `else` clause will be invoked.
+
+## `del`
+Python handles garbage collection automatically, so you don't need to give memory usage or space allocation much thought. However, python still provides teh `del` keyword, which can be used to delete objects and free the space in memory they consumed. Just specify `del obj`. One feature of note is that the `del` operator works on indices. For example, `del lst[3]` will delete the third item of the list `lst`.

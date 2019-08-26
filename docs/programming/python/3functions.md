@@ -53,7 +53,41 @@ Additionally, when returning multiple values, they are implicitly wrapped in a t
 ```
 
 ## Typing
-Python 3.5 adding the `typing` module that allows for type hinting within functions. You can read the full documentation [here](https://docs.python.org/3/library/typing.html)
+Python 3.5 adding the `typing` module that allows for type hinting within functions. You can read the full documentation [here](https://docs.python.org/3/library/typing.html). The typing module will perform checks on function arguments are return types to verify that they are behaving as desired. High quality code can leverage typing to improve readability and correctness.
+
+Within function signatures, a colon `:` following an argument indicuates its expected type and a an arrow `->` after the parenthetical indicates the expected return type. 
+```
+def append_and_return(items: list, item : int) -> list:
+    items.append(item)
+    return items
+
+def get(map: dict, key: str) -> int:
+    return map[key]
+```
+
+### Type Aliases
+The typing module includes support for aliases that can be leveraged for more complex type verification. Aliases for all of the common python data types already exist inclduing `List`, `Dict`, `Tuple`, and `Set`. Objects from the `typing` module have a bracket operator that allows you to indicate what type of items an object might hold.
+```
+from typing import List, Dict, Tuple, Set
+def dot(vec_1: List[float], vec_2: List[float]) -> float:
+    # implementation
+```
+We can also rewrite the same signature using a type alias. We create a new `typing` object that further defines the signature. 
+```
+Vector = List[float]
+def dot(vec_1: Vector, vec_2: Vector) -> float:
+    # implementation
+```
+Both of the above examples are identical. Here's a more complex example taken from the Python documentation linked earlier.
+```
+ConnectionOptions = Dict[str, str]
+Address = Tuple[str, int]
+Server = Tuple[Address, ConnectionOptions]
+
+def broadcast_message(message: str, servers: Sequence[Server]) -> None:
+```
+
+
 
 
 ## Decorators
